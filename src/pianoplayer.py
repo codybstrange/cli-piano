@@ -7,6 +7,7 @@ class PianoPlayer(pygame.sprite.Sprite):
             super().__init__(self.containers)
         else:
             raise Exception("PianoPlayer not assigned a container")
+        print(MID_KEYBOARD)
         pygame.mixer.init()
         #self.keyboard = {"C4": pygame.mixer.Sound("src/C4.wav")}
         self.keyboard = pygame.mixer.Sound("src/C4.wav")
